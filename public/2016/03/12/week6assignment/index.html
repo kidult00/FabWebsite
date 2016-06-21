@@ -1,0 +1,725 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/archives/2016/fablabshenzhen/students/417/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+
+<link href="/archives/2016/fablabshenzhen/students/417/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/archives/2016/fablabshenzhen/students/417/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Fab Academy" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.5.0" />
+
+
+
+
+
+
+<meta name="description">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Week6 - Electronics Design">
+<meta property="og:url" content="http://archive.fabacademy.org/2016/03/12/week6assignment/index.html">
+<meta property="og:site_name" content="Hackesign">
+<meta property="og:description">
+<meta property="og:image" content="http://7xjpra.com1.z0.glb.clouddn.com/week6.png">
+<meta property="og:image" content="http://7xjpra.com1.z0.glb.clouddn.com/01eagleUseLib.png">
+<meta property="og:image" content="http://7xjpra.com1.z0.glb.clouddn.com/001lib.png">
+<meta property="og:image" content="http://7xjpra.com1.z0.glb.clouddn.com/002eagleComponents.png">
+<meta property="og:image" content="http://7xjpra.com1.z0.glb.clouddn.com/03eageltool.png">
+<meta property="og:image" content="http://7xjpra.com1.z0.glb.clouddn.com/003eagleScheme.png">
+<meta property="og:image" content="http://7xjpra.com1.z0.glb.clouddn.com/01eagleUseLib.png">
+<meta property="og:image" content="http://7xjpra.com1.z0.glb.clouddn.com/004eaglesendtoboard.png">
+<meta property="og:image" content="http://7xjpra.com1.z0.glb.clouddn.com/005eagelgrid.png">
+<meta property="og:image" content="http://7xjpra.com1.z0.glb.clouddn.com/006ealgearrange.png">
+<meta property="og:image" content="http://7xjpra.com1.z0.glb.clouddn.com/007eagleRatsnest.png">
+<meta property="og:image" content="http://7xjpra.com1.z0.glb.clouddn.com/008eagleautoroute.png">
+<meta property="og:image" content="http://7xjpra.com1.z0.glb.clouddn.com/010eageldone-1.png">
+<meta property="og:image" content="http://7xjpra.com1.z0.glb.clouddn.com/011eagelexport.png">
+<meta property="og:image" content="http://7xjpra.com1.z0.glb.clouddn.com/012eagelallprint-1.png">
+<meta property="og:image" content="http://7xjpra.com1.z0.glb.clouddn.com/013fabmodels.png">
+<meta property="og:image" content="http://7xjpra.com1.z0.glb.clouddn.com/014echomilling.jpeg">
+<meta property="og:image" content="http://7xjpra.com1.z0.glb.clouddn.com/015echoboarddone.jpeg">
+<meta property="og:image" content="http://7xjpra.com1.z0.glb.clouddn.com/016echocomponents.jpeg">
+<meta property="og:image" content="http://7xjpra.com1.z0.glb.clouddn.com/017echosolderingdone.jpeg">
+<meta property="og:image" content="http://7xjpra.com1.z0.glb.clouddn.com/018myechoboard.jpeg">
+<meta property="og:updated_time" content="2016-03-15T07:44:03.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Week6 - Electronics Design">
+<meta name="twitter:description">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"always"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: 'Author'
+    }
+  };
+</script>
+
+  <title> Week6 - Electronics Design | Hackesign </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/archives/2016/fablabshenzhen/students/417/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Hackesign</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">LIN's Fab Academy Adventure</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu ">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/archives/2016/fablabshenzhen/students/417" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/archives/2016/fablabshenzhen/students/417/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-project">
+          <a href="/archives/2016/fablabshenzhen/students/417/Project-Plan" rel="section">
+            
+              <i class="menu-item-icon fa fa-question-circle fa-fw"></i> <br />
+            
+            menu.project
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/2016/fablabshenzhen/students/417/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+      
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Week6 - Electronics Design
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2016-03-12T16:43:45+08:00" content="2016-03-12">
+              2016-03-12
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="http://7xjpra.com1.z0.glb.clouddn.com/week6.png" alt=""></p>
+<a id="more"></a>
+<h2 id="Lecture_Notes"><a href="#Lecture_Notes" class="headerlink" title="Lecture Notes"></a>Lecture Notes</h2><p>I’ve updated Week6’s lecture notes in <a href="https://kidult00.gitbooks.io/00fabnotes/content/Week6/6_ElectronicsDesign.html" target="_blank" rel="external">my gitbook</a> .</p>
+<h2 id="Assignment"><a href="#Assignment" class="headerlink" title="Assignment"></a>Assignment</h2><blockquote>
+<p>Redraw the echo hello-world board</p>
+<ul>
+<li>add (at least) a button and LED (with current-limiting resistor)</li>
+<li>check the design rules, and make it</li>
+<li>extra credit: simulate its operation</li>
+</ul>
+</blockquote>
+<p>Since I have zero experience of circuitboard design, so I followed <a href="http://fabacademy.org/archives/2014/students/figueiredo.tiago/assignments/week6.html" target="_blank" rel="external">this assignment note</a> of fab 2014 to do my work.</p>
+<h3 id="1-_Import_lib"><a href="#1-_Import_lib" class="headerlink" title="1. Import lib"></a>1. Import lib</h3><p>Eagle provides enormous library of components, but for the purpose of this assignment, it will be better and easier to work with <a href="http://archive.fabacademy.org/archives/2016/doc/electronics/fab.lbr">the library</a> already provided by the academy.</p>
+<p>After opening Eagle, on the top toolbar there is a button “Use library”, click it and select the libraries you’ve downloaded a while ago.</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/01eagleUseLib.png" alt=""></p>
+<h3 id="2-_Add_components"><a href="#2-_Add_components" class="headerlink" title="2. Add components"></a>2. Add components</h3><p>The next step is to add components into the schematic canvas. The first component you are going to place is microcontroller ATtiny44. Choose ATTINY44-SSU from the FAB library and click ok to place it on your schematics.</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/001lib.png" alt=""></p>
+<p>After placing one component you can press “esc” and go back to “add panel”. Add other components: </p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/002eagleComponents.png" alt=""></p>
+<h3 id="3-_Sketch_the_schematic"><a href="#3-_Sketch_the_schematic" class="headerlink" title="3. Sketch the schematic"></a>3. Sketch the schematic</h3><p>After adding all the components, it’s time for some wiring, naming and labeling. You’ll use these commands:</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/03eageltool.png" alt=""></p>
+<p>You should label all the pins right. And the net should not overlap the pin. It’s easy to mess up. So doblecheck everything. Here is my schematic:</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/003eagleScheme.png" alt=""></p>
+<h3 id="4-_Generate_board"><a href="#4-_Generate_board" class="headerlink" title="4. Generate board"></a>4. Generate board</h3><p>Click “Generate/Switch to board” button next to the lib button. </p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/01eagleUseLib.png" alt=""></p>
+<p>It’ll take you to board view. All the commponents are ready to re-arrange.</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/004eaglesendtoboard.png" alt=""></p>
+<p>Use move and rotate commands to arrange the board. You might need to adjust grid setting for finer position control.</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/005eagelgrid.png" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/006ealgearrange.png" alt=""></p>
+<p>All components seem to be at the right place. Use “Ratsnest” command to clear some connetions.</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/007eagleRatsnest.png" alt=""></p>
+<p>Then I tried Autorouter, but the result was not desirable。</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/008eagleautoroute.png" alt=""></p>
+<h3 id="5-_Route_manually"><a href="#5-_Route_manually" class="headerlink" title="5. Route manually"></a>5. Route manually</h3><p>Follow the yellow traces, I route the board manually. These’s a tip: you can right click to change line modes when you come to a 90 degree turning point.</p>
+<p>After finishing routing, you can hide layers except “top” , then you can see the nice traces of your board:</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/010eageldone-1.png" alt=""></p>
+<p><a href="https://app.box.com/s/aaymx4rv9zuroshc6rktvhyweq8mw65i" target="_blank" rel="external">Downlong my eagle files</a></p>
+<h3 id="6-_Export"><a href="#6-_Export" class="headerlink" title="6. Export"></a>6. Export</h3><p>Export your image as a PNG selecting only the top layer of your board. You’ll only get the traces of it. Don’t forget to check the Monochrome checkbox.</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/011eagelexport.png" alt=""></p>
+<p>Next, export “Dimension” layer for the board.</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/012eagelallprint-1.png" alt=""></p>
+<h3 id="7-_Milling"><a href="#7-_Milling" class="headerlink" title="7. Milling"></a>7. Milling</h3><p>It’s time for milling. Upload eagle export to fab modules. I set the dpi to 1500 px and the route result seems ok.</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/013fabmodels.png" alt=""></p>
+<p>The traces, not bad.</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/014echomilling.jpeg" alt=""></p>
+<p>And the finish board:</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/015echoboarddone.jpeg" alt=""></p>
+<h3 id="8-_Assembly"><a href="#8-_Assembly" class="headerlink" title="8. Assembly"></a>8. Assembly</h3><p>Now, the finally step, assembling.</p>
+<p>Picking out all the components can be quite a painstaking job. I draw a sketch to assure everything is ready.</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/016echocomponents.jpeg" alt=""></p>
+<p>I like doing soldering, although I still have some trouble with those tiny components :)</p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/017echosolderingdone.jpeg" alt=""></p>
+<p><img src="http://7xjpra.com1.z0.glb.clouddn.com/018myechoboard.jpeg" alt=""></p>
+<h2 id="More_materials"><a href="#More_materials" class="headerlink" title="More materials"></a>More materials</h2><ul>
+<li><a href="http://www.jeremyblum.com/category/eagle-tutorials/" target="_blank" rel="external">JeremyBlum’s eagle tutorials</a></li>
+<li><a href="http://www.geek-workshop.com/thread-670-1-1.html" target="_blank" rel="external">EAGLE官方教程视频</a></li>
+</ul>
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/archives/2016/fablabshenzhen/students/417/2016/02/29/week5assignment/" rel="next" title="Week5 - 3D scanning and printing">
+                <i class="fa fa-chevron-left"></i> Week5 - 3D scanning and printing
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/archives/2016/fablabshenzhen/students/417/2016/03/20/week8assignment/" rel="prev" title="Week8 - Embedded Programming">
+                Week8 - Embedded Programming <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/archives/2016/fablabshenzhen/students/417/images/default_avatar.jpg"
+               alt="LIN JIE" />
+          <p class="site-author-name" itemprop="name">LIN JIE</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives/2016/fablabshenzhen/students/417/archives">
+              <span class="site-state-item-count">17</span>
+              <span class="site-state-item-name">posts</span>
+            </a>
+          </div>
+          
+          
+
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Lecture_Notes"><span class="nav-number">1.</span> <span class="nav-text">Lecture Notes</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Assignment"><span class="nav-number">2.</span> <span class="nav-text">Assignment</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-_Import_lib"><span class="nav-number">2.1.</span> <span class="nav-text">1. Import lib</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-_Add_components"><span class="nav-number">2.2.</span> <span class="nav-text">2. Add components</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-_Sketch_the_schematic"><span class="nav-number">2.3.</span> <span class="nav-text">3. Sketch the schematic</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-_Generate_board"><span class="nav-number">2.4.</span> <span class="nav-text">4. Generate board</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-_Route_manually"><span class="nav-number">2.5.</span> <span class="nav-text">5. Route manually</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-_Export"><span class="nav-number">2.6.</span> <span class="nav-text">6. Export</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-_Milling"><span class="nav-number">2.7.</span> <span class="nav-text">7. Milling</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-_Assembly"><span class="nav-number">2.8.</span> <span class="nav-text">8. Assembly</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#More_materials"><span class="nav-number">3.</span> <span class="nav-text">More materials</span></a></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="icon-next-heart fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">LIN JIE</span>
+</div>
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  
+
+
+  
+
+
+
+  <script type="text/javascript" src="/archives/2016/fablabshenzhen/students/417/vendors/jquery/index.js?v=2.1.3"></script>
+
+  <script type="text/javascript" src="/archives/2016/fablabshenzhen/students/417/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  <script type="text/javascript" src="/archives/2016/fablabshenzhen/students/417/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  <script type="text/javascript" src="/archives/2016/fablabshenzhen/students/417/vendors/velocity/velocity.min.js"></script>
+
+  <script type="text/javascript" src="/archives/2016/fablabshenzhen/students/417/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/archives/2016/fablabshenzhen/students/417/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/archives/2016/fablabshenzhen/students/417/js/src/utils.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/archives/2016/fablabshenzhen/students/417/js/src/motion.js?v=0.5.0"></script>
+
+
+
+  
+  
+
+  
+  
+<script type="text/javascript" src="/archives/2016/fablabshenzhen/students/417/js/src/scrollspy.js?v=0.5.0"></script>
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    NexT.motion.middleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+
+      if (CONFIG.sidebar === 'post') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          NexT.utils.displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/archives/2016/fablabshenzhen/students/417/js/src/bootstrap.js?v=0.5.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+  
+  
+
+  
+  
+
+
+</body>
+</html>
