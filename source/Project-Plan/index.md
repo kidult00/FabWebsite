@@ -3,6 +3,8 @@ title: Final project - Mini SoundBot
 date: 2016-01-29 11:35:19
 ---
 
+# Final project - Mini SoundBot
+
 ![](http://7xjpra.com1.z0.glb.clouddn.com/%5BFabFinal%5DVideoTitle1.jpg)
 
 ### Idea
