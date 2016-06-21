@@ -1,10 +1,11 @@
 ---
-title: Project Plan
+title: Final project - Mini SoundBot
 date: 2016-01-29 11:35:19
 ---
 
 
 # Final project - Mini SoundBot
+
 
 ![](http://7xjpra.com1.z0.glb.clouddn.com/%5BFabFinal%5DVideoTitle1.jpg)
 
@@ -137,23 +138,3 @@ Principle
 Here's block diagram of a theremin. Volume control in blue, pitch control in yellow and audio output in red.
 
 ![](https://upload.wikimedia.org/wikipedia/commons/c/cb/Block_diagram_Theremin.png)
-
-
-
-
-
-
-
-
-Ref:
-
-about Theremin
-
-- [Theremin wiki](https://en.wikipedia.org/wiki/Theremin)
-- [How to Build & Play a Theremin](http://www.ehow.com/videos-on_5309_build-play-theremin.html)
-- [Theremin](http://www.strangeapparatus.com/Theremin.html)
-
-about oscillator
-
-- [What is an oscillator? Oscillator tutorial in HD!](https://www.youtube.com/watch?v=aJAZHPqEUKU)
-- [Colpitts Crystal Oscillator Fundamentals](https://www.youtube.com/watch?v=I4bAfDu6F1k&nohtml5=False&spfreload=10)
